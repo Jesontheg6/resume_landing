@@ -58,78 +58,78 @@ $(function(){
   Javascript Function For Smooth Mouse Scrolling
 -------------------------------------------------------*/
 
-    jQuery.scrollSpeed = function(step, speed) {
+  //   jQuery.scrollSpeed = function(step, speed) {
         
-        var $document = $(document),
-            $body = $('html, body'),
-            option = 'default',
-            root = top,
-            scroll = false,
-            scrollY,
-            view;
+  //       var $document = $(document),
+  //           $body = $('html, body'),
+  //           option = 'default',
+  //           root = top,
+  //           scroll = false,
+  //           scrollY,
+  //           view;
             
-        if (window.navigator.msPointerEnabled) {
-            return false;
-        }
+  //       if (window.navigator.msPointerEnabled) {
+  //           return false;
+  //       }
             
-		jQuery.event.special.mousewheel = {
-			setup: function( _, ns, handle ){
-				if ( ns.includes("PreventDefault") ) {
-				 	this.addEventListener("mousewheel", handle, { passive: false });
-				} else {
-					return false;
-				}
-			}
-		}
+		// jQuery.event.special.mousewheel = {
+		// 	setup: function( _, ns, handle ){
+		// 		if ( ns.includes("PreventDefault") ) {
+		// 		 	this.addEventListener("mousewheel", handle, { passive: false });
+		// 		} else {
+		// 			return false;
+		// 		}
+		// 	}
+		// }
 
-        allWindow.on('mousewheel.PreventDefault DOMMouseScroll', function(e) {
+  //       allWindow.on('mousewheel.PreventDefault DOMMouseScroll', function(e) {
             
-            var deltaY = e.originalEvent.wheelDeltaY,
-                detail = e.originalEvent.detail;
-                scrollY = $document.height() > allWindow.height();
-                scroll = true;
+  //           var deltaY = e.originalEvent.wheelDeltaY,
+  //               detail = e.originalEvent.detail;
+  //               scrollY = $document.height() > allWindow.height();
+  //               scroll = true;
             
-            if (scrollY) {
+  //           if (scrollY) {
                 
-                view = allWindow.height();
+  //               view = allWindow.height();
                     
-                if (deltaY < 0 || detail > 0) {
-                    root = (root + view) >= $document.height() ? root : root += step;
-                }
+  //               if (deltaY < 0 || detail > 0) {
+  //                   root = (root + view) >= $document.height() ? root : root += step;
+  //               }
                 
-                if (deltaY > 0 || detail < 0) {
-                    root = root <= 0 ? 0 : root -= step;
-                }
+  //               if (deltaY > 0 || detail < 0) {
+  //                   root = root <= 0 ? 0 : root -= step;
+  //               }
                 
-                $body.stop().animate({
-                    scrollTop: root
-                }, speed, option, function() {
-                    scroll = false;
-                });
-            }
+  //               $body.stop().animate({
+  //                   scrollTop: root
+  //               }, speed, option, function() {
+  //                   scroll = false;
+  //               });
+  //           }
             
-            return false;
+  //           return false;
             
-        }).on('scroll', function() {
+  //       }).on('scroll', function() {
             
-            if (scrollY && !scroll) root = top;
-            if (!scroll) root = allWindow.scrollTop();
+  //           if (scrollY && !scroll) root = top;
+  //           if (!scroll) root = allWindow.scrollTop();
             
-        }).on('resize', function() {
+  //       }).on('resize', function() {
             
-            if (scrollY && !scroll) view = allWindow.height();
+  //           if (scrollY && !scroll) view = allWindow.height();
             
-        });       
-    };
+  //       });       
+  //   };
     
-    jQuery.easing.default = function (x,t,b,c,d) {
-        return -c * ((t=t/d-1)*t*t*t - 1) + b;
-    };
+  //   jQuery.easing.default = function (x,t,b,c,d) {
+  //       return -c * ((t=t/d-1)*t*t*t - 1) + b;
+  //   };
 
-    // initialize Smooth Scrolling Only in Modern browsers
-    if(animation) {
-    	jQuery.scrollSpeed(100, 700);
-    }
+  //   // initialize Smooth Scrolling Only in Modern browsers
+  //   if(animation) {
+  //   	jQuery.scrollSpeed(100, 700);
+  //   }
 
 
 /*---------------------------------------------------------------------
