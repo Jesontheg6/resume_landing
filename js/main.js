@@ -325,12 +325,13 @@ $(function(){
     if (animation) {
 
       var text = $('#home .typer-title'),
-          textOne = "i'm ui/ux designer",
-          textTwo = "let's work together",
-          textThree = "i can create awesome stuff";
+          textOne = "Product Manager",
+          textTwo = "Strategic Thinker",
+          textThree = "Cross Functional Communicator",
+          textFour = "User Centric"
 
           if (!!$.prototype.typer) {
-            text.typer([textOne,textTwo,textThree]);
+            text.typer([textOne,textTwo,textThree,textFour]);
           }
     }
 

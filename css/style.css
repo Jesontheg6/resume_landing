@@ -906,7 +906,6 @@ Contact
 }
 .contact-item .c-text h6 {
 	margin: 0;
-	word-break: break-all;
 }
 
 #contact-form {
@@ -1164,4 +1163,65 @@ keyframes animation
 		top: calc(50% - 6px);
 		opacity: 0;
 	}
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+
+.btn-outline-custom {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+
+.btn-rounded {
+    border-radius: 30px;
+}
+
+.btn {
+    padding: 12px 26px;
+}
+
+/*.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}*/
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.btn:hover {
+  background-color: #fff; /* Green */
+  color: black;
+}
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
