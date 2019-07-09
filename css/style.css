@@ -1199,7 +1199,9 @@ keyframes animation
     vertical-align: middle;
 }
 
-
+.btn:visited {
+	color: #fff;
+}
 
 *, ::after, ::before {
     box-sizing: border-box;
