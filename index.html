@@ -78,6 +78,7 @@
                         <li><a href="#home" class="scroll effect active" data-speed="800">HOME</a></li>
                         <li><a href="#work" class="scroll effect" data-speed="1400">STORY</a></li>
                         <li><a href="#services" class="scroll effect" data-speed="1400">SKILLSETS</a></li>
+                        <li><a href="#services" class="scroll effect" data-speed="1400">BlOG</a></li>
                         <li><a href="#clients" class="scroll effect" data-speed="1600">TESTIMONIAL</a></li>
                         <li><a href="#contact" class="scroll effect" data-speed="1700">INTERVIEW</a></li>
                     </ul>
@@ -229,25 +230,29 @@
         </div> <!-- End Container -->
     </section>
 
-    <div id="fm-medium-embed"></div>
+      <section id="" class="section one-page-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Learnings</h2>
+            </div>
 
-<!-- <script src="//data.feedmirror.com/embed.js"></script>
-<script>
-  var fmSettings = {
-    feedURL: 'https://data.feedmirror.com/-Lk7o8leRa-DIex_1Chx.json',
-    integration: 'medium-embed',
-    linkOutText: 'Read more',
-    linkToMediumProfileText: 'Subscribe on Medium',
-    postsCount: 3,
-    element: 'fm-medium-embed'
-  };
-  feedmirror.initialize(fmSettings);
-</script>
-            
- -->
+            <div id="fm-medium-embed"></div>
+
+            <div id="retainable-rss-embed" 
+            data-rss="https://medium.com/feed/@jesonleejunzhen,
+            https://medium.com/feed/vue-mastery"
+            data-maxcols="3" 
+             data-layout="slider"
+            data-poststyle="external" 
+            data-readmore="Read more" 
+            data-buttonclass="btn btn-primary" 
+            data-offset="-100"></div>
+
+        </div>
+    </section>
  
 
-    <section id="clients" class="section one-page-section">
+    <section id="clients" class="section one-page-section second-bg">
         <div class="container">
             <div class="section-title">
                 <h2>Expert Opinions</h2>
@@ -319,7 +324,7 @@
 
                              <div class="one-testimonial">
                             <div class="testimonial-content">
-                                <p>I’ve known Jeson for almost a year now and he’s truly a product person at heart. He sees things from a big picture and is always able to communicate his ideas in a motivating way. Most importantly, he is analytical and knows how to balanace intuition and data to make decisions.</p>
+                                <p>I’ve known Jeson for almost a year now and he’s truly a product person at heart. He sees things from a big picture and is always able to communicate his ideas in a motivating way. Most importantly, he also thinks analytically and knows how to balance between data and intuition to make decisions.</p>
                             </div>
                             <div class="testimonial-person">
                                 <figure>
@@ -335,7 +340,7 @@
 
                                 <div class="one-testimonial">
                             <div class="testimonial-content">
-                                <p>I was particularly impressed by Jeson’s ability to manage a number of tough projects at 42. That skill often takes years to develop among product managers, but it seemed to come perfectly natural to him. As an engineer, I truly enjoyed the time we worked together. </p>
+                                <p>I was particularly impressed by Jeson’s ability to lead and maange a number of tough projects at 42. He is pretty outspoken, but he's also a great listener. These skills often take years to develop among product managers, but it seemed to come perfectly natural to him. As an engineer, I truly enjoyed the time we worked together. </p>
                             </div>
                             <div class="testimonial-person">
                                 <figure>
@@ -374,7 +379,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section one-page-section second-bg">
+    <section id="contact" class="section one-page-section">
         <div class="container">
             <div class="section-title">
                 <h2>Reach out to me for an interview!</h2>
@@ -447,6 +452,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
+         <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
         <div class="container">
             <div class="row">
                 <a class="effect footer-title">Jeson - Product Manager</a>
